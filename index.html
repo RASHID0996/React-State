@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Practice!</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--Custom Css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="root"></div>
+<script type="text/babel">
+class Proposal extends React.Component {
+constructor (props){
+  super(props);
+  this.state = {
+  totalLoveCount: 0
+};
+
+}
+
+love()   {
+  alert('Yes, I love you 😉');
+this.setState({
+  totalLoveCount: this.state.totalLoveCount +1
+})
+}
+hate(){
+  alert('No sorry, I have a boyfriend 😠');
+
+}
+  render(){
+    const props=this.props
+    const totalLoveCount=this.state.totalLoveCount
+      return(
+    <div className='proposal'>
+      <h1>{props.children}</h1>
+      <div className='action'>
+        <button className='love' onClick={() => this.love()}>Love Me!😍🥰</button>
+        <button className='hate' onClick={this.hate}>Hate me!!😥😓</button>
+      </div>
+      {!!totalLoveCount && (<p>Total Loved clicked {totalLoveCount}</p>)}
+
+    </div>
+
+    )
+}
+
+}
+ReactDOM.render(
+<div className="proposal">
+  <Proposal>Do you love me?? 🙄🙄</Proposal>
+</div>
+,
+document.getElementById('root')
+);
+</script>
+  </body>
+</html>

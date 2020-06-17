@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+
+	background-color:#e3edf7; 
+}
+.proposal{
+	margin: 20px auto;
+	text-align: center;
+	font-size: 40px;
+	font-family: Comic Sans MS;
+	color: #000000;
+}
+.action{
+		margin: 20px;
+		
+}
+.love{padding: 20px;
+background-color: #ffffff;
+color: #000000;
+font-family:Comic Sans MS;
+margin-right:20px; 
+font-size: 25px;
+border-radius: 10px;
+box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),          
+           -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+.hate{padding: 20px;
+background-color: #ffffff;
+color: #000000;
+font-family:Comic Sans MS;
+margin-right:20px;
+font-size: 25px; 
+border-radius: 10px;
+box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	 			-6px -6px 10px -1px rgba(255,255,255,0.7); 			 			
+
+	}
+.love:hover{
+	cursor: pointer;
+    background-color:#000;
+    color: #fff; 
+    transition: .4s;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	 			inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	 			-0.5px -0.5px 0 rgba(255,255,255,1),
+	 		    0.5px    0.5px 0px rgba(0,0,0,0.15),
+	 			0px 12px 10px -10px rgba(0,0,0,0.15);
+
+}
+.hate:hover{
+	cursor: pointer;
+    background-color:#000;
+    color: #fff; 
+    transition: .4s;
+
+box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	 			inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	 			-0.5px -0.5px 0 rgba(255,255,255,1),
+	 		    0.5px    0.5px 0px rgba(0,0,0,0.15),
+	 			0px 12px 10px -10px rgba(0,0,0,0.15);
+}
